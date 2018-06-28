@@ -30,17 +30,17 @@ public class Secondproject {
 	public void sendanemail(){
 
 		try {
-			driver.findElement(By.id("identifierId")).sendKeys("rekha.ganib@gmail.com");
+			driver.findElement(By.id("identifierId")).sendKeys("");
 			driver.findElement(By.className("CwaK9")).click();
 			Thread.sleep(2000);
-			driver.findElement(By.name("password")).sendKeys("jaisreeram123");
+			driver.findElement(By.name("password")).sendKeys("pass");
 			Thread.sleep(2000);
 			driver.findElement(By.className("CwaK9")).click();
 
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			driver.findElement(By.xpath("//div[contains(text(),'COMPOSE')]")).click();
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-			driver.findElement(By.id(":nm")).sendKeys("gnraoqa@gmail.com");
+			driver.findElement(By.id(":nm")).sendKeys("");
 			driver.findElement(By.name("subjectbox")).sendKeys("mail from selenium");
 			Thread.sleep(4000);
 			Thread.sleep(4000);
